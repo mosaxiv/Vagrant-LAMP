@@ -34,9 +34,9 @@ yum-config-manager --enable mysql56-community
 yum -y install mysql-community-server
 systemctl start mysqld
 mysql -u root -e"
-CREATE DATABASE knight DEFAULT CHARACTER SET utf8mb4;
+CREATE DATABASE vagrant DEFAULT CHARACTER SET utf8mb4;
 CREATE USER vagrant IDENTIFIED BY 'vagrant';
-GRANT ALL PRIVILEGES ON knight.* TO vagrant@localhost IDENTIFIED BY 'vagrant';
+GRANT ALL PRIVILEGES ON vagrant.* TO vagrant@localhost IDENTIFIED BY 'vagrant';
 "
 
 # httpd
