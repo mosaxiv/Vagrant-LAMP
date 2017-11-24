@@ -32,6 +32,7 @@ yum -y install http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.
 yum-config-manager --disable mysql57-community
 yum-config-manager --enable mysql56-community
 yum -y install mysql-community-server
+
 systemctl start mysqld
 mysql -u root -e"
 CREATE DATABASE vagrant DEFAULT CHARACTER SET utf8mb4;
