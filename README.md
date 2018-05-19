@@ -1,7 +1,15 @@
 # Vagrant-LAMP
 
 * CentOS7
-* PHP7.1
+* PHP7.2
 * composer
-* MySQL5.6
+* MySQL8.0
 * httpd2.4
+
+## DB
+
+```
+Name : app
+User : vagrant
+PW : P@ssw0rd!
+```
