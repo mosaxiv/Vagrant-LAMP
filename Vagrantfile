@@ -7,6 +7,7 @@ vim \
 git \
 zip \
 unzip \
+yum-utils \
 epel-release \
 httpd \
 -y
@@ -33,6 +34,8 @@ composer config -g repos.packagist composer https://packagist.jp
 # MySQL
 yum -y remove mariadb-libs.x86_64
 yum -y install http://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm
+yum-config-manager --disable mysql80-community
+yum-config-manager --enable mysql57-community
 yum -y install mysql-community-server
 systemctl start mysqld
 DB_NEW_PASSWORD=P@ssw0rd!

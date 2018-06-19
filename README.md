@@ -3,7 +3,7 @@
 * CentOS7
 * PHP7.2
 * composer
-* MySQL8.0
+* MySQL5.7
 * httpd2.4
 
 ## DB
