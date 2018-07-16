@@ -49,6 +49,9 @@ GRANT ALL PRIVILEGES ON app.* TO vagrant@localhost;
 SCRIPT
 
 $start = <<SCRIPT
+ln -s /vagrant/vagrant/vagrant-httpd.conf /etc/httpd/conf.d/
+ln -s /vagrant/vagrant/vagrant-php.ini /etc/php.d/
+
 systemctl restart httpd
 systemctl restart mysqld
 
